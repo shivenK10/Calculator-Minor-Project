@@ -1,0 +1,126 @@
+/* Basic styling for the body */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Styling for the calculator container */
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Styling for the display */
+.display {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Grid layout for the buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+/* Styling for the buttons */
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* Styling for number buttons */
+.number {
+    background-color: #eee;
+}
+
+/* Styling for operator buttons */
+.operator {
+    background-color: #ccc;
+}
+
+/* Styling for the clear button */
+.clear {
+    background-color: #f08080;
+}
+
+/* Styling for the dark mode toggle button */
+.toggle-dark-mode {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.toggle-dark-mode:hover {
+    background-color: #23272b;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #212529; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+.calculator.dark-mode {
+    background-color: #282c34; /* Darker background for container */
+}
+
+.display.dark-mode {
+    background-color: #343a40;
+    color: #fff;
+}
+
+button.dark-mode {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+button.operator.dark-mode {
+    background-color: #5a5a5a;
+}
+
+button.clear.dark-mode {
+    background-color: #ff5c5c;
+}
+
+.toggle-dark-mode.dark-mode {
+    background-color: #f08080;
+    color: #343a40;
+}
+
+/* Responsive styling for larger screens */
+@media (min-width: 600px) {
+    .display {
+        font-size: 32px;
+    }
+    button {
+        font-size: 24px;
+        padding: 20px;
+    }
+}
